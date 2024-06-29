@@ -1,9 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>啥也没有</h1>
-  </body>
+    <title>文档标题</title>
+
+    <style>
+        .sidebar{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 25%;
+            height: 100%;
+            overflow-y: auto;
+            direction: rtl;
+        }
+        .qwq{
+            position: fixed;
+            left: 25%;
+            top: 0;
+            width: 75%;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .header {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+        body{
+          font-family: serif;
+          background-color: #009999;
+          margin: 0;
+          padding: 0;
+        }
+        .card{
+          margin: 5px;
+          border: 2px outset;
+          background-color: #c1c1c1;
+          padding: 3px;
+        }
+        .card1{
+          background-image: linear-gradient(to right,#0a1343,#1e7fd9);
+          padding: 2px;
+          color: white;
+        }
+        .card2{
+          padding: 2px;
+        }
+        .card3{
+          background-image: linear-gradient(to right,#0a1343,#1e7fd9);
+          padding: 5px;
+          color: white;
+        }
+        .card4{
+          color: inherit;
+          text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='header'>
+        <div class='card3'>
+            <a class='card4' href='https://qqqqqwww993.github.io'>主页</a>
+        </div>
+    </div>
+    <div class='sidebar'>
+        <div style='direction: ltr;'>
+            <div style="height: 30.725px;"></div>
+            <div class='card'>
+                <div class='card1'>
+                    <b>页面</b>
+                </div>
+                <div class='card2'>
+                    <ul>
+                        <li><a href='/index.html'>主页</a></li>
+                        <li><a href='/blog/'>博客</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='qwq'>
+        <div style="height: 30.725px;"></div>
+        <div class='card'>
+            <div class='card1'>
+                <b>测试</b>
+            </div>
+            <div class='card2'>
+                <h2>
+                    欢迎
+                </h2>
+                <a href='#'>啥也没有</a>
+            </div>
+        </div>
+        <div class='card'>
+            <div class='card1'>
+                <b>文章</b>
+            </div>
+            <div class='card2'>
+                <h2>
+                    文章
+                </h2>
+                <ul>
+                    <li><a href='/blog/2024062801.html'>测试文章</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class='card'>
+            <div class='card1'>
+                <b>联系方式</b>
+            </div>
+            <div class='card2'>
+                <ul>
+                    <li><a href='https://www.bilibili.com/1282151850'>bilibili</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
