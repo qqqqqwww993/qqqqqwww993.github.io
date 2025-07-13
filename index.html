@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>网站</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 
 <body>
@@ -41,6 +42,8 @@
             <a href="/">
                 分享
             </a>
+            <input type="text" placeholder="我喜欢你" id="search">
+        <button onclick="card(search(document.getElementById('search').value))">搜索</button>
         </nav>
     <main>
         <div class="tip">
@@ -63,5 +66,5 @@
     <footer>test</footer>
 </body>
 <script type="text/javascript" src="card.js"></script>
-
+<script type="text/javascript" src="search.js"></script>
 </html>
