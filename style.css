@@ -85,10 +85,12 @@ nav a{
     padding:25px;
 }
 .reply{
-    position: fixed;
     background-color: #fff;
     padding:20px;
-    overflow: auto;
+    overflow: scroll;
+}
+.reply::-webkit-scrollbar{
+    visibility: hidden;
 }
 .replycontainer{
     width:100%;
