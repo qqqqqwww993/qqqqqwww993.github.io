@@ -2,16 +2,48 @@
   "data": [
     {
       "title": "哈基米：我不是天才吗？（胭脂）",
-      "bvid": "BV1nH3Wz1EEk",
+      "bvid": "https://www.bilibili.com/video/BV1nH3Wz1EEk",
       "author": "带带小毛丝",
       "date": "2025-07-02",
-      "img": "#66ccff",
+      "img": "https://i0.hdslb.com/bfs/archive/2194e21f859e461c5f3e931353dee883185813e8.jpg",
+      "desc": "视频",
       "tag": [
         "古法鬼畜",
         "哈基米",
         "叮咚鸡",
         "动物园",
         "曼波"
+      ]
+    },
+     {
+      "title": "古典哈基米音乐《四基 · 冬 第一乐章 》完整版",
+      "bvid": "https://www.bilibili.com/video/BV1b738zkELi/",
+      "author": "公生憧憬者",
+      "date": "2025-07-03",
+      "img": "https://i0.hdslb.com/bfs/archive/2dcc20a33e3c4e299d9dacaf647de370409f012f.jpg",
+      "desc": "视频",
+      "tag": [
+        "古法鬼畜",
+        "哈基米",
+        "叮咚鸡",
+        "动物园",
+        "曼波",
+        "古典"
+      ]
+    },
+     {
+      "title": "古典哈基米：野哈飞舞",
+      "bvid": "https://www.bilibili.com/video/BV1LJ7ezJE59/",
+      "author": "kizznoluv",
+      "date": "2025-07-02",
+      "img": "https://i0.hdslb.com/bfs/archive/2194e21f859e461c5f3e931353dee883185813e8.jpg",
+      "desc": "视频",
+      "tag": [
+        "热门",
+        "哈基米",
+        "叮咚鸡",
+        "曼波",
+        "古典"
       ]
     }
   ]

@@ -1,23 +1,3 @@
-/*
-const list = `{
-  "data": [
-    {
-      "title": "哈基米：我不是天才吗？（胭脂）",
-      "bvid": "https://www.bilibili.com/video/BV1nH3Wz1EEk",
-      "author": "带带小毛丝",
-      "date": "2025-07-02",
-      "img": "https://i0.hdslb.com/bfs/archive/fadcdfbfdb787ac1ae13893a6fbb31ddce57114b.jpg",
-      "tag": [
-        "古法鬼畜",
-        "哈基米",
-        "叮咚鸡",
-        "动物园",
-        "曼波"
-      ]
-    }
-  ]
-}`;
-*/
 function httpGet(url) {
   try {
     let xhr = new XMLHttpRequest();
@@ -48,6 +28,7 @@ function card(objList) {
     <div class="cardcontent">
       <h3><a href="${item.bvid}" target="_blank">${item.title}</a></h3>
       <p>${item.author}&nbsp;${item.date}</p>
+      <p>${item.desc}</p>
       <div class="tagcontainer">${tagsHTML}</div>
     </div>
   </div>`;
@@ -63,5 +44,5 @@ function search(keyword) {
     item.author.toLowerCase().includes(keyword) ||
     item.tag.some(tag => tag.toLowerCase().includes(keyword))
   )
-  return  {data:result}
+  return { data: result }
 }
