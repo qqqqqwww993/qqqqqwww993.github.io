@@ -36,23 +36,22 @@
 
     </div>
     <nav class="navm">
-            <a href="/">
-                评论
-            </a>
-            <a href="/">
-                分享
-            </a>
-            <input type="text" placeholder="我喜欢你" id="search">
+        <button onclick="document.getElementById('replycontainer').style='display:flex;'">
+            评论
+        </button>
+        <a href="/">
+            分享
+        </a>
+        <input type="text" placeholder="我喜欢你" id="search">
         <button onclick="card(search(document.getElementById('search').value))">搜索</button>
-        </nav>
+    </nav>
     <main>
         <div class="tip">
-            
+
         </div>
         <div id="cardcontainer">
             <div class="card">
-                <img width="330"
-                    src />
+                <img width="330" src />
                 <div class="cardcontent">
                     <h3><a href="">Loading</a></h3>
                     <p>...</p>
@@ -63,8 +62,22 @@
                 </div>
             </div>
     </main>
+    <div class="replycontainer" id="replycontainer" style="display:none;">
+        <div class="reply">
+            <div class="replyheader">
+                <button class="close" onclick="document.getElementById('replycontainer').style='display:none;'">×</button>
+            </div>
+            
+            <script src="https://giscus.app/client.js" data-repo="qqqqqwww993/qqqqqwww993.github.io"
+                data-repo-id="R_kgDOPK4Hjw" data-category="评论" data-category-id="DIC_kwDOPK4Hj84Cs6Sh"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0"
+                data-input-position="top" data-theme="noborder_light" data-lang="zh-CN" crossorigin="anonymous" async>
+                </script>
+        </div>
+    </div>
+
     <footer>test</footer>
 </body>
 <script type="text/javascript" src="card.js"></script>
-<script type="text/javascript" src="search.js"></script>
+
 </html>

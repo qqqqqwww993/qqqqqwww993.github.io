@@ -27,7 +27,7 @@ function card(objList) {
     <img width="330" src="${item.img}" alt="${item.title}封面">
     <div class="cardcontent">
       <h3><a href="${item.bvid}" target="_blank">${item.title}</a></h3>
-      <p>${item.author}&nbsp;${item.date}</p>
+      <p class="author">${item.author}&nbsp;${item.date}</p>
       <p>${item.desc}</p>
       <div class="tagcontainer">${tagsHTML}</div>
     </div>
@@ -42,6 +42,7 @@ function search(keyword) {
   const result = videoList.data.filter(item =>
     item.title.toLowerCase().includes(keyword) ||
     item.author.toLowerCase().includes(keyword) ||
+    item.desc.toLowerCase().includes(keyword) ||
     item.tag.some(tag => tag.toLowerCase().includes(keyword))
   )
   return { data: result }
