@@ -24,7 +24,6 @@ function card(objList) {
     const date=new Date(item.date).toLocaleString();
     return `
   <div class="card">
-    <img width="330" src="${item.img}" alt="${item.title}封面">
     <div class="cardcontent">
       <h3><a href="${item.bvid}" target="_blank">${item.title}</a></h3>
       <p class="author">${item.author}&nbsp;${date}</p>
