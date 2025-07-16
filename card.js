@@ -9,7 +9,11 @@ function httpGet(url) {
   }
 
 }
-const videoList = JSON.parse(httpGet('https://qqqqqwww993.github.io/hachimi.json'));
+function getPage(page){
+  var index=JSON.parse(httpGet('https://qqqqqwww993.github.io/hachimis/index.json'))
+  return index.hachimis[page-1]
+}
+const videoList = JSON.parse();
 
 console.log('你好');
 // 1. 解析JSON数据
