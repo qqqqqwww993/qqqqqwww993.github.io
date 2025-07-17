@@ -42,10 +42,8 @@
         <button onclick="document.getElementById('replycontainer').style='display:flex;'">
             评论
         </button>
-        <input type="text" placeholder="我喜欢你" id="search" disabled>
-        <button onclick="card(search(document.getElementById('search').value))" disabled>搜索</button>
-        <input type="text" placeholder="输入页码" id="pg">
-        <button onclick="card(httpGet(getPage(document.getElementById('pg').value)))">冲刺！</button>
+        <input type="text" placeholder="我喜欢你" id="search">
+        <button onclick="card(search(document.getElementById('search').value))">搜索</button>
     </nav>
     <main>
         <div class="tip">
